@@ -47,7 +47,7 @@ public class Main {
 
         /* Questions to answer:
         *How many cents is the float off after 1000 iterations?
-        * 184 cents
+        * 184 cents <-- I got corrected --> 18 cents whoops!
         *
         *Why does the BigDecimal print 1.00 and not 1?
         *Because it was working with decimals

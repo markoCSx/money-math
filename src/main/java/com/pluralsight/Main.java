@@ -30,11 +30,22 @@ public class Main {
         }
         System.out.println("Float: " + f + " Double: " + d + " BigDecimal: " + bD);
 
-        BigDecimal fBD = new BigDecimal(f);
-        BigDecimal dBD = new BigDecimal(d);
+        BigDecimal fBD = BigDecimal.valueOf(f);
+        BigDecimal dBD = BigDecimal.valueOf(d);
 
+        System.out.println("Comparing Float and Double");
         compare(fBD, dBD);
+        System.out.println("Comparing Double and BigDecimal");
         compare(dBD, bD);
+
+        /* Questions to answer:
+        *How many cents is the float off after 1000 iterations?
+        * 184 cents
+        *
+        *Why does the BigDecimal print 1.00 and not 1?
+        *
+        *
+        * */
 
     }
 

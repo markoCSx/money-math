@@ -38,13 +38,22 @@ public class Main {
         System.out.println("Comparing Double and BigDecimal");
         compare(dBD, bD);
 
+        BigDecimal num1 = BigDecimal.ONE;
+        System.out.println(num1);
+        num1 = new BigDecimal("1");
+        System.out.println(num1);
+        num1 = BigDecimal.valueOf(1);
+        System.out.println(num1);
+
         /* Questions to answer:
         *How many cents is the float off after 1000 iterations?
         * 184 cents
         *
         *Why does the BigDecimal print 1.00 and not 1?
+        *Because it was working with decimals
         *
-        *
+        * What happens if you call .add(); without assigning the result back to your variable?
+        *.add() returns the sum, does not affect the variable unless you specifically assign it
         * */
 
     }
